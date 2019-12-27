@@ -21,6 +21,7 @@
 
 .card {
 	height: 400px;
+    -webkit-perspective: 1500px;
 	perspective: 1500px;
 	position: relative;
 
@@ -81,6 +82,7 @@
 			&:hover {
 				opacity: 1;
 				transform: rotateX(180deg);
+				z-index: 20;
 			}	
 			&--dark {
 			    background: linear-gradient(-135deg,
