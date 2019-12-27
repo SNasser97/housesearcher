@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/housesearcher/static/css/main.72ff403d.chunk.css",
+    "main.js": "/housesearcher/static/js/main.32feda6b.chunk.js",
+    "main.js.map": "/housesearcher/static/js/main.32feda6b.chunk.js.map",
+    "runtime-main.js": "/housesearcher/static/js/runtime-main.b4aba019.js",
+    "runtime-main.js.map": "/housesearcher/static/js/runtime-main.b4aba019.js.map",
+    "static/js/2.2461c55b.chunk.js": "/housesearcher/static/js/2.2461c55b.chunk.js",
+    "static/js/2.2461c55b.chunk.js.map": "/housesearcher/static/js/2.2461c55b.chunk.js.map",
+    "index.html": "/housesearcher/index.html",
+    "precache-manifest.f93822cf3962179dfb56feb3aa21b0ef.js": "/housesearcher/precache-manifest.f93822cf3962179dfb56feb3aa21b0ef.js",
+    "service-worker.js": "/housesearcher/service-worker.js",
+    "static/css/main.72ff403d.chunk.css.map": "/housesearcher/static/css/main.72ff403d.chunk.css.map",
+    "static/js/2.2461c55b.chunk.js.LICENSE": "/housesearcher/static/js/2.2461c55b.chunk.js.LICENSE",
+    "static/media/main.scss": "/housesearcher/static/media/school.cf7d925e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4aba019.js",
+    "static/js/2.2461c55b.chunk.js",
+    "static/css/main.72ff403d.chunk.css",
+    "static/js/main.32feda6b.chunk.js"
+  ]
+}
