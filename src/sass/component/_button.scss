@@ -1,0 +1,44 @@
+.btn {
+	&,
+	&:link,
+	&:visited {
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		align-items: center;
+		width: 180px;
+		height: 50px;
+		border-radius: 25px;
+		font-size: 1.2rem;
+		font-weight: bolder;
+		margin-top: 10px;
+		cursor: pointer;
+		border:1px solid currentColor;
+		transition: all .2s ease-in-out;
+		transform: scale(0.85) translateY(0);
+	}
+	&:hover {
+		transform: scale(1) translateY(-6px);
+		box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+		// &::after {
+		// 	content:"";
+		// 	transform: scale(1.4) scaleY(1.6);
+		// 	opacity: 0;
+		// }
+	}
+	&:active {
+		transform: scale(1.00) translateY(-1px);
+		box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+		outline:none;
+	}
+	&__primary {
+			background: $col-main;
+			color:$col-white;
+			&:hover{
+				// background: transparent;
+				// color: $col-main;
+				border: 1px solid currentColor;
+				
+			}
+	}
+}

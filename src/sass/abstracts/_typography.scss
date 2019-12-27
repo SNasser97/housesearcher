@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: 'House M.D.';
+    src: url('../../assets/font/HouseMD.eot');
+    src: local('../../assets/font/House M.D.'), local('HouseM.D.'),
+        url('../../assets/font/HouseMD.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/font/HouseMD.woff') format('woff'),
+        url('../../assets/font/HouseMD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kayak_sansregular';
+    src: url('../../assets/font/kayak_sans_regular-webfont.eot');
+    src: url('../../assets/font/kayak_sans_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/font/kayak_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    color: $col-white;
+    text-transform: capitalize;
+}
+.white {
+    color:$col-white;
+}
+.main-heading {
+	font-family: $heading-font;
+	font-size: 3.5rem;
+	text-transform: capitalize;
+	color: $col-white; /* fallback */
+	
+	// @supports(-webkit-background-clip:text) or (-background-clip:text) {
+	// 	 background: -webkit-linear-gradient($col-tertiary, $col-white);
+	// 	 -webkit-background-clip: text;
+	// 	 -webkit-text-fill-color: transparent;
+	// }
+	@include respond(phone) {
+        font-size: 1.6rem;
+    }
+}
+
+.error-msg {
+    text-transform: none;
+    &:after {
+        content:"😥";
+        height: 10px;
+        width: 10px;
+    }
+}
