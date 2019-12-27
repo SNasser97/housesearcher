@@ -1,3 +1,6 @@
+# House Searcher app
+This app was created based on robofriends but I've added my own JSON data and design to it. You can search for relevant house type. The app loads JSON data of properties (the property names and addresses etc.). Hovering over will display/flip over to show additional details 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
