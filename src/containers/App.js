@@ -14,7 +14,7 @@ class App extends Component {
 		}
 	}
 	componentDidMount() {
-		const apiURL = "https://api.myjson.com/bins/jyoes";
+		const apiURL = "https://api.jsonbin.io/b/5e42f19a817c5f163f9ab757/1";
 		// this is hosted on a temp server so URL changes frequently
 		fetch(apiURL) // api call
 		.then(resp => resp.json()) // convert to json
