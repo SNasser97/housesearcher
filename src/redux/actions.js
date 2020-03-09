@@ -12,7 +12,7 @@ export const setSearchField = (text) => ({ // return obj
 
 export const fetchHomes = () => (dispatch) => {
 	dispatch({ type: REQUEST_HOMES_PENDING });
-	fetch("https://api.myjson.com/bins/19r5z2")
+	fetch("https://api.jsonbin.io/b/5e66463103d6af389870144e/2")
 		.then(response => response.json())
 		.then(data => 
 			dispatch({
