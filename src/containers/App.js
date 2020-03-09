@@ -1,36 +1,39 @@
 import React, { Component } from "react";
+
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Loader from "../components/Loader";
 import Scroll from "../components/Scroll";
 import ErrorBoundary from "../components/ErrorBoundary";
+import { setSearchField, fetchHomes } from "../redux/actions";
+import { connect } from "react-redux";
+
+const mapStateToProps = state => { // what state to listen and pass down as prop
+	const {searchHomes, getHomes} = state;
+	return {
+		searchField: searchHomes.searchField,
+		property: getHomes.property,
+		isPending: getHomes.isPending,
+		error: getHomes.error
+	}
+}
+const mapDispatchToProps = (dispatch) => { // what props to listen for and what action to take and dispatch/send
+	return {
+		onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+		onFetchHomes: () => dispatch(fetchHomes())
+	}
+}
 
 class App extends Component {
-	constructor() {
-		super();
-		this.state = {
-			property: [],
-			searchField:''
-		}
-	}
+	
 	componentDidMount() {
-		const apiURL = "https://api.jsonbin.io/b/5e42f19a817c5f163f9ab757/1";
-		// this is hosted on a temp server so URL changes frequently
-		fetch(apiURL) // api call
-		.then(resp => resp.json()) // convert to json
-		.then(homes => {
-			this.setState({ property: homes })
-		});
-	}
-
-	onSearchChange = (event) => { // custom function
-		// setState for searchField to whatever we type in SearchBox
-		// for changing the state DON'T DO this.state.obj = ""
-		this.setState({ searchField:event.target.value }) 
+		const { onFetchHomes } = this.props;
+		onFetchHomes();
 	}
 
 	render() {
-		const { property, searchField} = this.state;
+		const { searchField, onSearchChange, property, isPending } = this.props;
+
 		const filterPropertyType = property.filter(home => {
 			return home["house_type"].toLowerCase().includes(searchField.toLowerCase());
 			// if property type (lower case) == searchField (lowercase)
@@ -40,12 +43,12 @@ class App extends Component {
 		// console.log(filterPropertyType);
 		
 		// if property empty show loader else display cards
-		return (property.length === 0) ? 
+		return (isPending) ? 
 		<Loader/> : 
 		(
 			<React.Fragment>
 		 			<h1 className="main-heading tc">Home Searcher</h1>
-		 			<SearchBox searchChange={ this.onSearchChange }/>
+		 			<SearchBox searchChange={ onSearchChange }/>
 		 			<Scroll>
 		 				<ErrorBoundary>
 		 					<CardList property={ filterPropertyType }/>
@@ -56,21 +59,11 @@ class App extends Component {
 	}
 }
 
-export default App;
+// export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+// connect accepts 2 params what state to listen for, what action to take
 
-// const App = () => {
-// 	return (
-// 		<React.Fragment>
-// 			<h1 className="tc">Home Searcher</h1>
-// 			<SearchBox />
-// 			<CardList property={ property }/>
-// 		</React.Fragment>
-// 	);
-// }
-
-
-
-// props, passed down from parent to child, reads it
+// props, passed down from pasrent to child, reads it
 // (1/2) state, change/dynamic, description of app, an obj which 
 // (2/2) describes application
 
