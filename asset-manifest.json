@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/housesearcher/static/css/main.bf0a7e9b.chunk.css",
-    "main.js": "/housesearcher/static/js/main.32feda6b.chunk.js",
-    "main.js.map": "/housesearcher/static/js/main.32feda6b.chunk.js.map",
+    "main.js": "/housesearcher/static/js/main.3a15f55f.chunk.js",
+    "main.js.map": "/housesearcher/static/js/main.3a15f55f.chunk.js.map",
     "runtime-main.js": "/housesearcher/static/js/runtime-main.b4aba019.js",
     "runtime-main.js.map": "/housesearcher/static/js/runtime-main.b4aba019.js.map",
-    "static/js/2.2461c55b.chunk.js": "/housesearcher/static/js/2.2461c55b.chunk.js",
-    "static/js/2.2461c55b.chunk.js.map": "/housesearcher/static/js/2.2461c55b.chunk.js.map",
+    "static/js/2.6244ecc6.chunk.js": "/housesearcher/static/js/2.6244ecc6.chunk.js",
+    "static/js/2.6244ecc6.chunk.js.map": "/housesearcher/static/js/2.6244ecc6.chunk.js.map",
     "index.html": "/housesearcher/index.html",
-    "precache-manifest.fb0c730c3dcf17b1b925fdfd6c876238.js": "/housesearcher/precache-manifest.fb0c730c3dcf17b1b925fdfd6c876238.js",
+    "precache-manifest.71e2f74811cf4968d43c7fc796966c7b.js": "/housesearcher/precache-manifest.71e2f74811cf4968d43c7fc796966c7b.js",
     "service-worker.js": "/housesearcher/service-worker.js",
     "static/css/main.bf0a7e9b.chunk.css.map": "/housesearcher/static/css/main.bf0a7e9b.chunk.css.map",
-    "static/js/2.2461c55b.chunk.js.LICENSE": "/housesearcher/static/js/2.2461c55b.chunk.js.LICENSE",
+    "static/js/2.6244ecc6.chunk.js.LICENSE": "/housesearcher/static/js/2.6244ecc6.chunk.js.LICENSE",
     "static/media/main.scss": "/housesearcher/static/media/school.cf7d925e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b4aba019.js",
-    "static/js/2.2461c55b.chunk.js",
+    "static/js/2.6244ecc6.chunk.js",
     "static/css/main.bf0a7e9b.chunk.css",
-    "static/js/main.32feda6b.chunk.js"
+    "static/js/main.3a15f55f.chunk.js"
   ]
 }
