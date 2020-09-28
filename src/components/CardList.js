@@ -4,6 +4,7 @@ import Card from "./Card";
 // {property} = props/property
 const CardList = ({ property }) => {
 	// const cardsArray = 
+	console.log({comp: 'CARDLIST', time: new Date()});
 	return (
 		<div className="card-container">
 			{

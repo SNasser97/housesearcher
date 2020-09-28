@@ -3,18 +3,23 @@ import ReactDOM from 'react-dom';
 import "./sass/main.scss";
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
-import { createLogger } from 'redux-logger';
+// import { createLogger } from 'redux-logger';
 import thunkMiddleWare from "redux-thunk";
 import * as serviceWorker from './serviceWorker';
 import { searchHomes, getHomes } from './redux/reducers';
 import App from "./containers/App";
 
 // output actions and payload of state props
-const logger = createLogger();
+// const logger = createLogger();
 // combine reducers into 1 root
 const rootReducer = combineReducers({searchHomes, getHomes});
 // redux store, passed to container/app
-const store = createStore(rootReducer, applyMiddleware(thunkMiddleWare, logger));
+const store = createStore(rootReducer, 
+	applyMiddleware(
+		thunkMiddleWare, 
+		// logger
+	)
+);
 
 // export default => import Name from "./Name";
 // export non-default => import { name } from "./name";

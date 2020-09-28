@@ -5,6 +5,7 @@ import SearchBox from "../components/SearchBox";
 import Loader from "../components/Loader";
 import Scroll from "../components/Scroll";
 import ErrorBoundary from "../components/ErrorBoundary";
+import Header from "../components/Header";
 import { setSearchField, fetchHomes } from "../redux/actions";
 import { connect } from "react-redux";
 
@@ -43,11 +44,12 @@ class App extends Component {
 		// console.log(filterPropertyType);
 		
 		// if property empty show loader else display cards
+		console.info('---------------- RENDER ----------------');
 		return (isPending) ? 
 		<Loader/> : 
 		(
 			<React.Fragment>
-		 			<h1 className="main-heading tc">Home Searcher</h1>
+					<Header />
 		 			<SearchBox searchChange={ onSearchChange }/>
 		 			<Scroll>
 		 				<ErrorBoundary>
