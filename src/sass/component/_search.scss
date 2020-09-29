@@ -3,10 +3,27 @@
   justify-content: center;
   padding: 10px;
   margin-bottom: 20px;
+  label {
+    align-self: center;
+    margin-right: 20px;
+    font-size: 18px;
+    position: relative;
+    // &:before {
+    //   content: '';
+    //   display:block;
+    //   position: absolute;
+    //   left: -12px;
+    //   top:-11px;
+    //   z-index: 2;
+    //   height: 20px;
+    //   width: 20px;
+    //   background: royalblue;
+    // }
+  }
   &__input {
     font-family: inherit;
     font-size: 1.2rem;
-    border-radius: 20px;
+    border-radius: 0 20px 20px 0;
     border:none;
     outline: none;
     line-height: 1.5;
@@ -14,14 +31,14 @@
     background:rgba(255,255,255, .11);
     border:2px solid $col-main;
     color: #fff;
-    width: 250px;
+    width: 280px;
     transition: all .4s cubic-bezier(.19,1.35,1,.9);
     padding: 5px;
     backface-visibility: hidden;
     &:focus {
       width: 350px;
     }
-     &::placeholder{
+    &::placeholder{
       color:lightgray;
     }
   }
