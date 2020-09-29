@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/housesearcher/precache-manifest.146d9839805732a91ac924b242848bb4.js"
+  "/housesearcher/precache-manifest.8b0a17657c8027624ccab2a9201740c2.js"
 );
 
 self.addEventListener('message', (event) => {

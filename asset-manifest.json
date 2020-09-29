@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/housesearcher/static/css/main.8dffb5f8.chunk.css",
+    "main.css": "/housesearcher/static/css/main.df15bcb5.chunk.css",
     "main.js": "/housesearcher/static/js/main.c2066931.chunk.js",
     "main.js.map": "/housesearcher/static/js/main.c2066931.chunk.js.map",
     "runtime-main.js": "/housesearcher/static/js/runtime-main.4f29e16d.js",
@@ -8,16 +8,16 @@
     "static/js/2.4be52865.chunk.js": "/housesearcher/static/js/2.4be52865.chunk.js",
     "static/js/2.4be52865.chunk.js.map": "/housesearcher/static/js/2.4be52865.chunk.js.map",
     "index.html": "/housesearcher/index.html",
-    "precache-manifest.146d9839805732a91ac924b242848bb4.js": "/housesearcher/precache-manifest.146d9839805732a91ac924b242848bb4.js",
+    "precache-manifest.8b0a17657c8027624ccab2a9201740c2.js": "/housesearcher/precache-manifest.8b0a17657c8027624ccab2a9201740c2.js",
     "service-worker.js": "/housesearcher/service-worker.js",
-    "static/css/main.8dffb5f8.chunk.css.map": "/housesearcher/static/css/main.8dffb5f8.chunk.css.map",
+    "static/css/main.df15bcb5.chunk.css.map": "/housesearcher/static/css/main.df15bcb5.chunk.css.map",
     "static/js/2.4be52865.chunk.js.LICENSE.txt": "/housesearcher/static/js/2.4be52865.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/housesearcher/static/media/school.cf7d925e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4f29e16d.js",
     "static/js/2.4be52865.chunk.js",
-    "static/css/main.8dffb5f8.chunk.css",
+    "static/css/main.df15bcb5.chunk.css",
     "static/js/main.c2066931.chunk.js"
   ]
 }
