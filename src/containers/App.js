@@ -4,6 +4,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Loader from '../components/Loader';
 import Scroll from '../components/Scroll';
+import Header from '../components/Header';
 import ErrorBoundary from '../components/ErrorBoundary';
 import { setSearchField, fetchHomes } from '../redux/actions';
 import { connect } from 'react-redux';
@@ -47,7 +48,7 @@ class App extends Component {
 		<Loader/> : 
 		(
 			<React.Fragment>
-		 			<h1 className='main-heading tc'>Home Searcher</h1>
+					<Header />
 		 			<SearchBox searchChange={ onSearchChange }/>
 		 			<Scroll>
 		 				<ErrorBoundary>
