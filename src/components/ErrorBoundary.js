@@ -16,7 +16,7 @@ class ErrorBoundary extends Component {
 	render() {
 		const { hasError } = this.state;
 		if(hasError) {
-			return <h1 className="tc error-msg">Oops..Something went wrong.</h1>
+			return <h1 className='tc error-msg'>Oops..Something went wrong.</h1>
 		}
 		// otherwise render ErrorBoundries children
 		return this.props.children;
