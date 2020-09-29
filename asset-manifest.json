@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/housesearcher/static/css/main.4af1040a.chunk.css",
-    "main.js": "/housesearcher/static/js/main.f1c530d7.chunk.js",
-    "main.js.map": "/housesearcher/static/js/main.f1c530d7.chunk.js.map",
+    "main.css": "/housesearcher/static/css/main.8dffb5f8.chunk.css",
+    "main.js": "/housesearcher/static/js/main.c2066931.chunk.js",
+    "main.js.map": "/housesearcher/static/js/main.c2066931.chunk.js.map",
     "runtime-main.js": "/housesearcher/static/js/runtime-main.4f29e16d.js",
     "runtime-main.js.map": "/housesearcher/static/js/runtime-main.4f29e16d.js.map",
-    "static/js/2.0dbba631.chunk.js": "/housesearcher/static/js/2.0dbba631.chunk.js",
-    "static/js/2.0dbba631.chunk.js.map": "/housesearcher/static/js/2.0dbba631.chunk.js.map",
+    "static/js/2.4be52865.chunk.js": "/housesearcher/static/js/2.4be52865.chunk.js",
+    "static/js/2.4be52865.chunk.js.map": "/housesearcher/static/js/2.4be52865.chunk.js.map",
     "index.html": "/housesearcher/index.html",
-    "precache-manifest.603054c09f89d78d48dbf577f04618f8.js": "/housesearcher/precache-manifest.603054c09f89d78d48dbf577f04618f8.js",
+    "precache-manifest.146d9839805732a91ac924b242848bb4.js": "/housesearcher/precache-manifest.146d9839805732a91ac924b242848bb4.js",
     "service-worker.js": "/housesearcher/service-worker.js",
-    "static/css/main.4af1040a.chunk.css.map": "/housesearcher/static/css/main.4af1040a.chunk.css.map",
-    "static/js/2.0dbba631.chunk.js.LICENSE.txt": "/housesearcher/static/js/2.0dbba631.chunk.js.LICENSE.txt",
+    "static/css/main.8dffb5f8.chunk.css.map": "/housesearcher/static/css/main.8dffb5f8.chunk.css.map",
+    "static/js/2.4be52865.chunk.js.LICENSE.txt": "/housesearcher/static/js/2.4be52865.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/housesearcher/static/media/school.cf7d925e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4f29e16d.js",
-    "static/js/2.0dbba631.chunk.js",
-    "static/css/main.4af1040a.chunk.css",
-    "static/js/main.f1c530d7.chunk.js"
+    "static/js/2.4be52865.chunk.js",
+    "static/css/main.8dffb5f8.chunk.css",
+    "static/js/main.c2066931.chunk.js"
   ]
 }
