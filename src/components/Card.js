@@ -8,7 +8,7 @@ const Card = ({features,id,name,area, postcode, type, desc, price, image}) => {
 			<div className='card'>
 				<div className='card__house card__house--front'>
 					<div className='house__details'>
-					<img className='house__img' src={image} alt={`property-${id}, ${name}`}/>
+					<img className='house__img' src={image} alt={`property-${id}, ${name}`} width='320' height='225' />
 						<h2 className='house__name'>{name}</h2>
 						<p className='house__address'>{`${area}, ${postcode}`}</p>
 						<p className='house__type'>{type}</p>

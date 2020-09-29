@@ -7,6 +7,6 @@ export const setSearchField = (text) => ({ // return obj
 });
 
 export const fetchHomes = () => (dispatch) => {
-	dispatch(apiCall('https://api.jsonbin.io/b/5e66463103d6af389870144e/2'));
+	dispatch(apiCall('https://api.jsonbin.io/b/5e66463103d6af389870144e/3'));
 }  
 // export const getHomes 
