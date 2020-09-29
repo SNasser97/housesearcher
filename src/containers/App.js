@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import CardList from "../components/CardList";
-import SearchBox from "../components/SearchBox";
-import Loader from "../components/Loader";
-import Scroll from "../components/Scroll";
-import ErrorBoundary from "../components/ErrorBoundary";
-import { setSearchField, fetchHomes } from "../redux/actions";
-import { connect } from "react-redux";
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import Loader from '../components/Loader';
+import Scroll from '../components/Scroll';
+import ErrorBoundary from '../components/ErrorBoundary';
+import { setSearchField, fetchHomes } from '../redux/actions';
+import { connect } from 'react-redux';
 
 const mapStateToProps = state => { // what state to listen and pass down as prop
 	const {searchHomes, getHomes} = state;
@@ -35,7 +35,7 @@ class App extends Component {
 		const { searchField, onSearchChange, property, isPending } = this.props;
 
 		const filterPropertyType = property.filter(home => {
-			return home["house_type"].toLowerCase().includes(searchField.toLowerCase());
+			return home['house_type'].toLowerCase().includes(searchField.toLowerCase());
 			// if property type (lower case) == searchField (lowercase)
 			// then filter it
 		});
@@ -47,7 +47,7 @@ class App extends Component {
 		<Loader/> : 
 		(
 			<React.Fragment>
-		 			<h1 className="main-heading tc">Home Searcher</h1>
+		 			<h1 className='main-heading tc'>Home Searcher</h1>
 		 			<SearchBox searchChange={ onSearchChange }/>
 		 			<Scroll>
 		 				<ErrorBoundary>

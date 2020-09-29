@@ -13,7 +13,7 @@ const Scroll = (props) => {
 	// console.log(props);
 	// return props.children;
 	return (
-		<div className="scroll">
+		<div className='scroll'>
 			{props.children}
 		</div>
 	);

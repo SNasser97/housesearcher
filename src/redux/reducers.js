@@ -3,10 +3,10 @@ import {
 	REQUEST_HOMES_PENDING,
 	REQUEST_HOMES_SUCCESS,
 	REQUEST_HOMES_FAILED 
-} from "./constants";
+} from './constants';
 
 const initialStateSearch = {
-	searchField:"",
+	searchField:'',
 }
 
 // takes state and the action that occured e.g. on input change
@@ -25,7 +25,7 @@ export const searchHomes = (state=initialStateSearch, action={}) => { // default
 const initialStateHomes = {
 	property:[],
 	isPending: false,
-	error:""
+	error:''
 }
 
 export const getHomes = (state=initialStateHomes, action={}) => {

@@ -2,7 +2,7 @@ import {
 	REQUEST_HOMES_PENDING,
 	REQUEST_HOMES_SUCCESS,
 	REQUEST_HOMES_FAILED 
-} from "../redux/constants";
+} from '../redux/constants';
 
  const apiCall = (url) => dispatch => {
 	dispatch({
