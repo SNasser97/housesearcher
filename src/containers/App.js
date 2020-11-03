@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 
-import CardList from '../components/CardList';
-import SearchBox from '../components/SearchBox';
-import Loader from '../components/Loader';
-import Scroll from '../components/Scroll';
-import Header from '../components/Header';
-import ErrorBoundary from '../components/ErrorBoundary';
+import MainPage from '../components/MainPage';
+
 import { setSearchField, fetchHomes } from '../redux/actions';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => { // what state to listen and pass down as prop
-	const {searchHomes, getHomes} = state;
+	const { searchHomes, getHomes } = state;
 	return {
 		searchField: searchHomes.searchField,
 		property: getHomes.property,
@@ -26,37 +22,10 @@ const mapDispatchToProps = (dispatch) => { // what props to listen for and what 
 }
 
 class App extends Component {
-	
-	componentDidMount() {
-		const { onFetchHomes } = this.props;
-		onFetchHomes();
-	}
-
 	render() {
-		const { searchField, onSearchChange, property, isPending } = this.props;
-
-		const filterPropertyType = property.filter(home => {
-			return home['house_type'].toLowerCase().includes(searchField.toLowerCase());
-			// if property type (lower case) == searchField (lowercase)
-			// then filter it
-		});
-
-		// console.log(filterPropertyType);
-		
-		// if property empty show loader else display cards
-		console.info('---------------- RENDER ----------------');
-		return (isPending) ? 
-		<Loader/> : 
-		(
-			<React.Fragment>
-					<Header />
-		 			<SearchBox searchChange={ onSearchChange }/>
-		 			<Scroll>
-		 				<ErrorBoundary>
-		 					<CardList property={ filterPropertyType }/>
-		 				</ErrorBoundary>
-		 			</Scroll>
-			</React.Fragment>
+		// this.props in this case referring to the redux store/state of each reducer.
+		return (
+			<MainPage {...this.props} />
 		);
 	}
 }
