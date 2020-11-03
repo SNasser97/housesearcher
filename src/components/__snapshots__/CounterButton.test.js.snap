@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter component expect to render counter 1`] = `
+<button
+  colour="red"
+  onClick={[Function]}
+  style={
+    Object {
+      "display": "block",
+      "margin": "0 auto",
+    }
+  }
+  test="ctr-button"
+>
+  COUNT: 
+  0
+</button>
+`;

@@ -12,7 +12,7 @@ class Header extends Component {
     return (
       <>
         <h1 className="main-heading tc">Home Searcher</h1>
-        <CounterButton color={'red'} />
+        <CounterButton colour={'red'} />
       </>
     )
   }
