@@ -16,6 +16,7 @@ const iconStyles = {
 }
 
 const SearchBox = ({ searchChange }) => {
+	console.log({ comp: 'SEARCHBOX', time: new Date() });
 	return (
 		<div className='search'>
 			<label htmlFor='search' aria-label="Search:">

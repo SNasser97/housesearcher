@@ -44,6 +44,7 @@ class App extends Component {
 		// console.log(filterPropertyType);
 		
 		// if property empty show loader else display cards
+		console.info('---------------- RENDER ----------------');
 		return (isPending) ? 
 		<Loader/> : 
 		(
