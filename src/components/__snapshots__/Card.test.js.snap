@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render card component 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card__house card__house--front"
+  >
+    <div
+      className="house__details"
+    >
+      <img
+        alt="property-1, 70 St Denys Road"
+        className="house__img"
+        height="225"
+        src="https://i.ibb.co/1mSpYqF/house-1-min.jpg"
+        width="320"
+      />
+      <h2
+        className="house__name"
+      >
+        70 St Denys Road
+      </h2>
+      <p
+        className="house__address"
+      >
+        Potter Heighham, NR29 9FD
+      </p>
+      <p
+        className="house__type"
+      >
+        Terraced
+      </p>
+      <p
+        className="house__price"
+      >
+        <span
+          className="house__price--currency"
+        >
+          £
+        </span>
+        187,495
+      </p>
+    </div>
+    <div
+      className="card__house card__house--back"
+    >
+      <div
+        className="house__details"
+      >
+        <p
+          className="house__description"
+        >
+          A newly refurbished 4-bedroom family home in Potter Heighham, A lovely terraced property close to the city center for all your shopping needs as well as a great family home and close to many local schools ideal for stress-free school runs
+        </p>
+        <ul
+          className="house__list"
+        >
+          <li
+            className="house__item house__item--emojiBed"
+          >
+            4 bedrooms
+          </li>
+          <li
+            className="house__item house__item--emojiCity"
+          >
+            0.4mi from city center
+          </li>
+          <li
+            className="house__item house__item--emojiSchool"
+          >
+            0.34mi from local school
+          </li>
+          <li
+            className="house__item house__item--emojiParking"
+          >
+            parking, residential
+          </li>
+        </ul>
+        <a
+          className="btn btn__primary"
+          href="#!"
+          target="_blank"
+        >
+          View
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
