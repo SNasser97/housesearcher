@@ -17,7 +17,7 @@ const mapStateToProps = state => { // what state to listen and pass down as prop
 const mapDispatchToProps = (dispatch) => { // what props to listen for and what action to take and dispatch/send
 	return {
 		onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-		onFetchHomes: () => dispatch(fetchHomes())
+		onFetchHomes: () => fetchHomes(dispatch)
 	}
 }
 
